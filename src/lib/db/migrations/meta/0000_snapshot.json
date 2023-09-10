@@ -1,0 +1,113 @@
+{
+  "id": "00000000-0000-0000-0000-000000000000",
+  "prevId": "",
+  "version": "5",
+  "dialect": "mysql",
+  "tables": {
+    "Todo": {
+      "name": "Todo",
+      "columns": {
+        "id": {
+          "autoincrement": false,
+          "name": "id",
+          "type": "varchar(191)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "createdAt": {
+          "default": "CURRENT_TIMESTAMP(3)",
+          "autoincrement": false,
+          "name": "createdAt",
+          "type": "datetime(3)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "updatedAT": {
+          "default": "CURRENT_TIMESTAMP(3)",
+          "autoincrement": false,
+          "name": "updatedAT",
+          "type": "datetime(3)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "text": {
+          "autoincrement": false,
+          "name": "text",
+          "type": "varchar(191)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "done": {
+          "default": 0,
+          "autoincrement": false,
+          "name": "done",
+          "type": "tinyint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "userId": {
+          "autoincrement": false,
+          "name": "userId",
+          "type": "varchar(191)",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "compositePrimaryKeys": {
+        "Todo_id": {
+          "name": "Todo_id",
+          "columns": [
+            "id"
+          ]
+        }
+      },
+      "indexes": {
+        "Todo_userId_idx": {
+          "name": "Todo_userId_idx",
+          "columns": [
+            "userId"
+          ],
+          "isUnique": false
+        }
+      },
+      "foreignKeys": {},
+      "uniqueConstraints": {}
+    },
+    "User": {
+      "name": "User",
+      "columns": {
+        "id": {
+          "autoincrement": false,
+          "name": "id",
+          "type": "varchar(191)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "name": {
+          "autoincrement": false,
+          "name": "name",
+          "type": "varchar(191)",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "compositePrimaryKeys": {
+        "User_id": {
+          "name": "User_id",
+          "columns": [
+            "id"
+          ]
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {}
+    }
+  },
+  "schemas": {},
+  "_meta": {
+    "schemas": {},
+    "tables": {},
+    "columns": {}
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "version": "5",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1694287171191,
+      "tag": "0000_tiresome_phantom_reporter",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1694373533175,
+      "tag": "0001_solid_squadron_sinister",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1694373605672,
+      "tag": "0002_eager_zaladane",
+      "breakpoints": true
+    }
+  ]
+}
